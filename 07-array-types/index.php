@@ -16,7 +16,7 @@ $surname = 'Anisimova';
 $address = 'Kyiv, Ukraine';
 $tel = '+380677581995';
 $email = 'krollzilla@gmail.com';
-$languages = ['UA','EN','RU'];
+$languages = ['UA', 'EN', 'RU'];
 ?>
 <div id="app">
     <form action="GET">
