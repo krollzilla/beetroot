@@ -22,30 +22,30 @@ $languages = ['UA','EN','RU'];
     <form action="GET">
         <div class="row">
 	        <label for="name">Name</label>
-	        <input type="text" id="name" value="<?=$name;?>">
+	        <input type="text" id="name" value="<?=$name?>">
         </div>
 	    <div class="row">
 	        <label for="surname">Surname</label>
-	        <input type="text" id="surname" value="<?=$surname;?>">
+	        <input type="text" id="surname" value="<?=$surname?>">
 	    </div>
 	    <div class="row">
 	        <label for="address">Address</label>
-	        <input type="text" id="address" value="<?=$address;?>">
+	        <input type="text" id="address" value="<?=$address?>">
 	    </div>
 	    <div class="row">
 	        <label for="tel">Telephone </label>
-	        <input type="text" id="tel" value="<?=$tel;?>">
+	        <input type="text" id="tel" value="<?=$tel?>">
 		</div>
 	    <div class="row">
 	        <label for="email">Email</label>
-	        <input type="text" id="email" value="<?=$email;?>">
+	        <input type="text" id="email" value="<?=$email?>">
         </div>
 	    <div class="row">
 		    <label for="language">Language</label>
 		    <select id="language">
-			    <option><?=$languages[0];?></option>
-			    <option><?=$languages[1];?></option>
-			    <option><?=$languages[2];?></option>
+			    <option><?=$languages[0]?></option>
+			    <option><?=$languages[1]?></option>
+			    <option><?=$languages[2]?></option>
 		    </select>
 	    </div>
     </form>
