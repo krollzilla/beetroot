@@ -17,15 +17,11 @@ $languages["DE"] = ["Hallo!"];
 $minUser = $users[min(array_keys($users))];
 $maxUser = $users[max(array_keys($users))];
 
-if ($minUser["language"] === $maxUser["language"]) {
-    foreach ($languages[$minUser["language"]] as $key => $val) {
-        echo $val . PHP_EOL;
-    }
-} else {
-    foreach ($languages[$minUser["language"]] as $key => $val) {
-        echo $val . PHP_EOL;
-    }
+foreach ($languages[$minUser["language"]] as $key => $val) {
+    echo $val . PHP_EOL;
+}
 
+if ($minUser["language"] !== $maxUser["language"]) {
     foreach ($languages[$maxUser["language"]] as $key => $val) {
         echo $val . PHP_EOL;
     }
