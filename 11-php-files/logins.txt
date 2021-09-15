@@ -1,0 +1,5 @@
+admin 123456
+sasha 654321
+login password
+log pass
+name MyBestPassword
