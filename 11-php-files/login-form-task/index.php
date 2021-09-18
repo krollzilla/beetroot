@@ -33,29 +33,32 @@
 		if (isset($_POST['submit'])) {
 			$login = $_POST["login"];
 			$password = $_POST["password"];
-
-			/*ищем строку с логином-паролем среди значений файла logins.txt*/
-			$searchLine = ($login . " " . $password);               //в таком формате записаны логины-пароли в файле
-			$loginsFile = fopen("logins.txt", "r");
-			while (!feof($loginsFile)) {
-				$line = trim(fgets($loginsFile));
-				$arrayFromFile[] = $line;
-			}
-			fclose("logins.txt");
-			$checkLoginFlag = in_array($searchLine, $arrayFromFile);
-
-			/*если в файле есть нужный логин-пароль - выводим приветствие, пополняем историю авторизаций в отдельном файле*/
-			if ($checkLoginFlag) {
-				echo 'Здравствуйте, ' . $login . '!' . PHP_EOL;
-				if (file_exists("history.txt")) {
-					$historyFile = fopen("history.txt", "a");       //открываем файл, если он уже создан
-				} else {
-					$historyFile = fopen("history.txt", "w");       //если файла еще нет - создаем
+			if (file_exists("logins.txt")) {
+				/*ищем строку с логином-паролем среди значений файла logins.txt*/
+				$searchLine = ($login . " " . $password);               //в таком формате записаны логины-пароли в файле
+				$loginsFile = fopen("logins.txt", "r");
+				while (!feof($loginsFile)) {
+					$line = trim(fgets($loginsFile));
+					$arrayFromFile[] = $line;
 				}
-				fwrite($historyFile, (date("'d.m.Y H:i:s'") . " - " . $login . PHP_EOL));
-				fclose("history.txt");
-			} else { /*если не найдено соответствующий логин-пароль в logins.txt: */
-				echo 'Вам необходимо зарегистрироваться!';
+				fclose($loginsFile);
+				$checkLoginFlag = in_array($searchLine, $arrayFromFile);
+
+				/*если в файле есть нужный логин-пароль - выводим приветствие, пополняем историю авторизаций в отдельном файле*/
+				if ($checkLoginFlag) {
+					echo 'Здравствуйте, ' . $login . '!' . PHP_EOL;
+					if (file_exists("history.txt")) {
+						$historyFile = fopen("history.txt", "a");       //открываем файл, если он уже создан
+					} else {
+						$historyFile = fopen("history.txt", "w");       //если файла еще нет - создаем
+					}
+					fwrite($historyFile, (date("'d.m.Y H:i:s'") . " - " . $login . PHP_EOL));
+					fclose($historyFile);
+				} else { /*если не найдено соответствующий логин-пароль в logins.txt: */
+					echo 'Вам необходимо зарегистрироваться!';
+				}
+			} else { /*если logins.txt не существует: */
+				echo 'Вам необходимо зарегистрироваться! База пользователей пуста!';
 			}
 		}
 		?>
