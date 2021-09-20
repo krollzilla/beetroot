@@ -1,0 +1,86 @@
+[
+  {
+    "Name": "Olga",
+    "Login": "olka",
+    "Password": "1234",
+    "Email": "olka@gmail.com",
+    "Language": "EN"
+  },
+  {
+    "Name": "Oleksandra",
+    "Login": "sasha",
+    "Password": "12345678",
+    "Email": "sasha@gmail.com",
+    "Language": "RU"
+  },
+  {
+    "Name": "Oleg",
+    "Login": "oleg",
+    "Password": "1234111111",
+    "Email": "oleg@gmail.com",
+    "Language": "UA"
+  },
+  {
+    "Name": "Michel",
+    "Login": "mike",
+    "Password": "1234",
+    "Email": "mike@gmail.com",
+    "Language": "EN"
+  },
+  {
+    "Name": "Anastasiia",
+    "Login": "nastya",
+    "Password": "123412345",
+    "Email": "nastya@gmail.com",
+    "Language": "RU"
+  },
+  {
+    "Name": "Kira",
+    "Login": "kiro4ka",
+    "Password": "1234567890",
+    "Email": "kiro4ka@gmail.com",
+    "Language": "RU"
+  },
+  {
+    "Name": "Artem",
+    "Login": "tema",
+    "Password": "1234",
+    "Email": "tema@gmail.com",
+    "Language": "RU"
+  },
+  {
+    "Name": "Roman",
+    "Login": "roma",
+    "Password": "1234asdfgasdfg",
+    "Email": "roma@gmail.com",
+    "Language": "UA"
+  },
+  {
+    "Name": "Valerii",
+    "Login": "valera",
+    "Password": "1234567890",
+    "Email": "valera@gmail.com",
+    "Language": "EN"
+  },
+  {
+    "Name": "Sofiia",
+    "Login": "sonya",
+    "Password": "123412345",
+    "Email": "sonya@gmail.com",
+    "Language": "RU"
+  },
+  {
+    "Name": "Fufix",
+    "Login": "fufix",
+    "Password": "1234",
+    "Email": "fuf@gmail.com",
+    "Language": "EN"
+  },
+  {
+    "Name": "Olosha",
+    "Login": "ola",
+    "Password": "1234",
+    "Email": "ola@gmail.com",
+    "Language": "EN"
+  }
+]
