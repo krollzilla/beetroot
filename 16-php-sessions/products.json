@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Chair",
+    "price": "560",
+    "amount": "3"
+  },
+  {
+    "name": "Table",
+    "price": "1000",
+    "amount": "2"
+  },
+  {
+    "name": "Candle",
+    "price": "100",
+    "amount": "1"
+  },
+  {
+    "name": "Desk",
+    "price": "890",
+    "amount": "1"
+  },
+  {
+    "name": "Cupboard",
+    "price": "1500",
+    "amount": "1"
+  },
+  {
+    "name": "Chest",
+    "price": "600",
+    "amount": "5"
+  }
+]
