@@ -14,12 +14,12 @@ var_export($output);
  */
 function twoSum($nums, $target): array
 {
-    foreach ($nums as $i => $value) {
+    foreach ($nums as $key => $value) {
         $diff = $target - $value;
         if (isset($tmp[$diff])) {
-            return [$i, $tmp[$diff]];
+            return [$key, $tmp[$diff]];
         }
-        $tmp[$value] = $i;
+        $tmp[$value] = $key;
     }
     return [];
 }
