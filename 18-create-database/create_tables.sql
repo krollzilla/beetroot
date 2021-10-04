@@ -3,7 +3,7 @@ CREATE TABLE products(
     product_name VARCHAR(100) NOT NULL,
     product_price DECIMAL(10, 2) NOT NULL,
     product_quantity INT DEFAULT 0,
-	category_id INT NOT NULL,
+    category_id INT NOT NULL,
     PRIMARY KEY(id)
 );
 
@@ -26,6 +26,6 @@ CREATE TABLE shopping_carts(
     product_id INT NOT NULL,
     user_id INT NOT NULL,
     orders_quantity INT NOT NULL,
-	order_date DATETIME,
+    order_date DATETIME,
     PRIMARY KEY(id)
 );
