@@ -1,0 +1,3 @@
+docker exec -i mysql_beetroot mysqldump -ubeetroot -pbeetroot --databases beetroot --no-tablespaces > ./db-dump/dump.sql
+
+docker exec -i mysql_beetroot mysql -ubeetroot -pbeetroot beetroot < ./db-dump/dump.sql
