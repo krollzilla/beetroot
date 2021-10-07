@@ -3,7 +3,7 @@ INSERT INTO product_categories (category_name) VALUES ('Clothes');
 INSERT INTO product_categories (category_name) VALUES ('Tableware');
 INSERT INTO product_categories (category_name) VALUES ('Stationery');
 INSERT INTO product_categories (category_name) VALUES ('Books');
-COMMIT;
+
 
 INSERT INTO products (product_name, product_price, product_quantity, category_id) VALUES ('Chair', 120, 200, 1); 
 INSERT INTO products (product_name, product_price, product_quantity, category_id) VALUES ('Table', 1200, 100, 1);
@@ -21,7 +21,7 @@ INSERT INTO products (product_name, product_price, product_quantity, category_id
 INSERT INTO products (product_name, product_price, product_quantity, category_id) VALUES ('Spoon', 15, 1000, 3);
 INSERT INTO products (product_name, product_price, product_quantity, category_id) VALUES ('Pencil', 2, 1000, 4);
 INSERT INTO products (product_name, product_price, product_quantity, category_id) VALUES ('Pen', 2, 1000, 4);
-COMMIT;
+
 
 INSERT INTO users (name, email, password) VALUES ('Sasha', 'sasha@test.ua', '1112');
 INSERT INTO users (name, email, password) VALUES ('Pasha', 'pasha@test.ua', '1113');
@@ -36,7 +36,7 @@ INSERT INTO users (name, email, password) VALUES ('Andrei', 'andrei@test.ua', '1
 INSERT INTO users (name, email, password) VALUES ('Kirill', 'kirill@test.ua', '1121');
 INSERT INTO users (name, email, password) VALUES ('Anton', 'anton@test.ua', '1131');
 INSERT INTO users (name, email, password) VALUES ('Nikita', 'nikita@test.ua', '1141');
-COMMIT;
+
 
 INSERT INTO shopping_carts (product_id, user_id, orders_quantity, order_date) VALUES (3, 1, 2, '2021-01-19 03:14:07');
 INSERT INTO shopping_carts (product_id, user_id, orders_quantity, order_date) VALUES (13, 1, 2, '2021-01-19 05:14:02');
@@ -55,4 +55,3 @@ INSERT INTO shopping_carts (product_id, user_id, orders_quantity, order_date) VA
 INSERT INTO shopping_carts (product_id, user_id, orders_quantity, order_date) VALUES (9, 13, 1, '2021-01-19 03:14:11');
 INSERT INTO shopping_carts (product_id, user_id, orders_quantity, order_date) VALUES (1, 13, 1, '2021-01-19 07:16:07');
 INSERT INTO shopping_carts (product_id, user_id, orders_quantity, order_date) VALUES (6, 10, 1, '2021-01-19 05:09:07');
-COMMIT;

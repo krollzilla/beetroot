@@ -15,7 +15,6 @@ LIMIT    1;
 UPDATE products SET product_quantity = product_quantity*2
 ORDER BY product_quantity ASC
 LIMIT    1;
-COMMIT;
 
 
 /*выведите данные о всех пользователях с товаром в корзине и их товар, который добавлен в корзину*/
