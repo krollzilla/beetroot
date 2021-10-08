@@ -12,9 +12,17 @@ LIMIT    1;
 
 
 /*обновите товар с минимальным количеством единиц, увеличив количество в 2 раза*/
-UPDATE products SET product_quantity = product_quantity*2
+UPDATE products SET product_quantity = product_quantity * 2
 ORDER BY product_quantity ASC
 LIMIT    1;
+
+UPDATE products,
+    (SELECT id FROM products
+     WHERE product_quantity IN
+           (SELECT MIN(product_quantity) FROM products))
+        AS other_products
+SET products.product_quantity = products.product_quantity * 2
+WHERE products.id = other_products.id;
 
 
 /*выведите данные о всех пользователях с товаром в корзине и их товар, который добавлен в корзину*/
