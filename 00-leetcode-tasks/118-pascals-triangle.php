@@ -32,13 +32,6 @@ function findNumberValue(int $n, int $m)
     return round((factorial($n) / (factorial($m) * factorial($n - $m))), 0);
 }
 
-/*
-function factorial(int $n): string
-{
-    return gmp_strval(gmp_fact($n));
-}
- * */
-
 /**
  * @param  int  $n
  * @return float|int
