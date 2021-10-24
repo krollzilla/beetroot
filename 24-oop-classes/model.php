@@ -11,7 +11,7 @@ class Model
 
     private function connect(): void
     {
-        $config = require 'config.php';
+        $config = require '.env.php';
         $this->connection = new PDO($config['dsn'], $config['username'], $config['password']);
     }
 
