@@ -6,8 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Beetroot\\Classes\\Model' => $baseDir . '/public/classes/Model.php',
-    'Beetroot\\Classes\\Products' => $baseDir . '/public/classes/Products.php',
-    'Beetroot\\Classes\\ShoppingCart' => $baseDir . '/public/classes/ShoppingCart.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
 );

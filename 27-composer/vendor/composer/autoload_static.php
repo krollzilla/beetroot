@@ -7,6 +7,14 @@ namespace Composer\Autoload;
 class ComposerStaticInit5970c7bfcba813fbdaf3109688662db6
 {
     public static $prefixLengthsPsr4 = array (
+        'P' => 
+        array (
+            'Psr\\Log\\' => 8,
+        ),
+        'M' => 
+        array (
+            'Monolog\\' => 8,
+        ),
         'B' => 
         array (
             'Beetroot\\Classes\\' => 17,
@@ -14,6 +22,14 @@ class ComposerStaticInit5970c7bfcba813fbdaf3109688662db6
     );
 
     public static $prefixDirsPsr4 = array (
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'Monolog\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
         'Beetroot\\Classes\\' => 
         array (
             0 => __DIR__ . '/../..' . '/public/classes',
@@ -21,9 +37,6 @@ class ComposerStaticInit5970c7bfcba813fbdaf3109688662db6
     );
 
     public static $classMap = array (
-        'Beetroot\\Classes\\Model' => __DIR__ . '/../..' . '/public/classes/Model.php',
-        'Beetroot\\Classes\\Products' => __DIR__ . '/../..' . '/public/classes/Products.php',
-        'Beetroot\\Classes\\ShoppingCart' => __DIR__ . '/../..' . '/public/classes/ShoppingCart.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 
