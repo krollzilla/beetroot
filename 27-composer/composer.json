@@ -3,5 +3,8 @@
      "psr-4": {
          "Beetroot\\Classes\\": "public/classes/"
      }
+ },
+ "require": {
+  "monolog/monolog": "^2.3"
  }
 }
